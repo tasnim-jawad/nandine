@@ -1,0 +1,154 @@
+.nav_overlay{
+    background-color: rgba(25,25,25,.35);
+    position:relative;
+}
+.header_nav{
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav .image{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px 0px;
+    width: 7.125rem;
+}
+.nav_toggle{
+    display: none;
+}
+.nav_toggle_label{
+    /* margin-right: 0em; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.nav_toggle_label span,
+.nav_toggle_label span::before,
+.nav_toggle_label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav_toggle_label span::before,
+.nav_toggle_label span::after{
+    content: '';
+    position: absolute;
+}
+.nav_toggle_label span::before{
+    bottom: 7px;
+}
+.nav_toggle_label span::after{
+    top: 7px;
+}
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: rgba(25,25,25,.80);;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    padding: 20px 0px;
+
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav a{
+    color: var(--white) !important;
+    font-family: 'Raleway-regular' ;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+nav a:hover{
+    color: var(--brand1) !important;
+    transition: all ease-in-out 350ms;
+}
+.nav_toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+.nav_toggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width:992px) {
+    .nav_toggle_label{
+        display: none;
+    }
+    .header_nav{
+        display: grid;
+        grid-template-columns:1fr minmax(570px,4fr);
+
+    }
+    .image {
+        grid-column: 1/2;
+    }
+    nav {
+        all:unset;
+        grid-column: 2 /3 ;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        background: var(--brand1);
+        position:absolute;
+        top: -1em;
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: transform ease-in-out 350ms;
+
+    }
+    nav a:hover{
+        
+        transform: scale(1.2,1.2);
+
+        
+    }
+    nav a:hover::before{
+        transform: scale(1,1);
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    nav li{
+        margin-left: 1.5em;
+        margin-bottom: 0em;
+    }
+    
+}

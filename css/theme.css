@@ -1,0 +1,87 @@
+:root{
+    /* color  */
+    --brand1:#fe320a;
+    --brand2:#5bc5f4;
+    --bg-brand:#f3f3f3;
+    --black-brand:#252525;
+    --gray-brand:#151515;
+    --pera-color:#515151;
+    --border:1px solid #fe320a;
+    --white:#ffffff;
+
+    /* fonts  */
+    --monts-ext-light:'Montserrat-ExtraLight';
+    --monts-light:'Montserrat-Light';
+    --monts-reg:'Montserrat-regular';
+    --monts-bold:'Montserrat-bold';
+    --monts-ext-bold:'Montserrat-ExtraBold';
+    --rail-ext-light:'Raleway-ExtraLight';
+    --rail-light:'Raleway-Light';
+    --rail-reg:'Raleway-regular';
+    --rail-bold:'Raleway-bold';
+    --rail-bold:'Raleway-ExtraBold';
+    
+}
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('../fonts/Montserrat/static/Montserrat-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat/static/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url('../fonts/Montserrat/static/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-ExtraLight';
+    src: url('../fonts/Raleway/static/Raleway-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('../fonts/Raleway/static/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'Raleway-regular';
+    src: url('../fonts/Raleway/static/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url('../fonts/Raleway/static/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('../fonts/Raleway/static/Raleway-ExtraBold.ttf');
+}
+
+
+
+
+
+p{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: var(--black-brand);
+    font-weight: 600;
+    font-family: "Raleway-regular";
+}
+.button-brand{
+    background-color: var(--brand1);
+    color: var(--white);
+    text-transform: capitalize;
+    font-family: var(--rail-reg);
+    padding: 15px 30px;
+    font-weight: 100;
+
+}

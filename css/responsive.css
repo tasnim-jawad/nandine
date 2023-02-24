@@ -1,0 +1,168 @@
+
+
+/* // extra-Small devices (extra-Small phones, 450px and up) */
+@media (min-width: 450px) {
+    /* banner start  */
+    .banner_container p {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* banner end  */
+    
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* banner start  */
+    
+    .banner_container h1 {
+        font-size: 50px;
+        letter-spacing:2px;
+        line-height: 56px;
+    }
+    .banner_container p {
+        line-height: 24px;
+    }
+    /* banner end  */
+    .title_container .section_title {
+        font-size: 30px;
+        line-height: 56px;
+    }
+    .overlay_know_more {
+        padding: 100px 0px;
+    }
+
+    .cetagory{
+        flex-direction: row;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .cetagory a{
+        margin: 0;
+        padding: 10px 12px;
+    }
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* nav start  */
+    .header_nav .image {
+        width: 9rem;
+    }
+    nav li {
+        margin-left: 1.5em;
+    }
+    /* nav end  */
+    /* banner start  */
+    .banner_container h1 {
+        font-size: 50px;
+        letter-spacing:1px;
+        line-height: 56px;
+    }
+    .banner_btn {
+        font-size: 20px;
+        font-family: var(--rail-light);
+        padding: 15px 40px;
+    }
+    /* banner end  */
+
+    /* about start  */
+    .about_item_container{
+        margin-top: 0;
+    }
+    .overlay_know_more {
+        padding: 110px 0px;
+    }
+    .overlay_know_more h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .overlay_know_more .play_border {
+        width: 65px;
+        height: 65px;
+    
+    }
+    .testimonial_body p{
+        max-width: 70%;
+        margin: auto;
+    }
+    .form{
+        max-width: 80%;
+        margin: auto;
+    }
+    .social_footer a{
+        margin-bottom: 0px;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header_nav .image {
+        width: 10rem;
+        padding: 20px 0px;
+
+    }
+    /* banner start  */
+    .banner_container h1 {
+        font-size: 60px;
+        letter-spacing:2px;
+        line-height: 60px;
+    }
+    .banner_container p {
+        max-width: 95%;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    /* banner end  */
+    /* about start  */
+    .about_item_container >*{
+        margin-bottom: 32px;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header_nav .image {
+        width: 10.5rem;
+        padding: 25px 0px;
+
+    }
+    .banner_container p {
+        max-width: 85%;
+        margin: auto;
+        margin-top: 3.5rem;
+        margin-bottom: 4rem;
+    }
+    .banner_btn {
+        font-size: 24px;
+        font-family: var(--rail-light);
+        padding: 20px 45px;
+    }
+    .about_image {
+        max-width: 100%;
+    }
+    .about_pera2{
+        max-width: 80%;
+    }
+    .testimonial_body p{
+        max-width: 50%;
+    }
+    
+    
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .about_item_container{
+        max-width: 80%;
+    }
+    .about_item_container >*{
+        margin-bottom: 40px;
+    }
+
+ }
