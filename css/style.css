@@ -259,8 +259,6 @@
     font-weight: 400;
     font-family: var(--rail-reg);
 }
-.skill_prograce{}
-.skill_prograce .skill_level{}
 .skill_prograce h3{
     font-size: 16px;
     letter-spacing: 0px;
@@ -641,7 +639,6 @@ footer{
     padding: 40px 0px;
     text-align: center;
 }
-.social_footer{}
 .social_footer a{
     font-size: 18px;
     line-height: 24px;
